@@ -1,4 +1,4 @@
-# COMP1602 Finals Solutions
+# 02 Finals Solutions
 This repository contains Sem2 2023 solutions. This is a follow up to the Comp1602 past paper practise repo I worked on with Paul Taylor.
 ```sh
 https://github.com/uni-paul-taylor2/comp1602-pastpaper-practice.git
