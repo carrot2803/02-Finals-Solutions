@@ -24,15 +24,14 @@ void zip(int bits[], char zipped[]){
     zipped[index] = '\0';
 }
 
-void unzip(char zipped[], int bits[]) { // state means 0 or 1
-    int index = 0, state = 1;
-    int digit = zipped[0] - '0'; // undo sequence of zeros
-    while(digit-- > 0) bits[index++] = 0;
-     
-    for (int i = 1; i < strlen(zipped); i++) { 
-        for(int j = 0; j < zipped[i] - '0'; j++) 
-            bits[index++] = state % 2;
-        state++; // every new number means the sequence broke
+void unzip(char zipped[], int bits[]) { 
+    int index = 0, state = 1, digit = zipped[0] - '0'; // state means 0 or 1 as bits only have two
+    while (digit-- > 0) bits[index++] = 0; // check if there is a sequence of zeros
+      
+    for (int i = 1; i < strlen(zipped); i++) {  // every new number means the sequence broke so its the inverse state
+        for (int j = 0; j < zipped[i] - '0'; j++) 
+            bits[index++] = state;
+        state = !state; // flip state
     }
 }
 
