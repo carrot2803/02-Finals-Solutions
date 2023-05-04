@@ -10,10 +10,10 @@ https://github.com/uni-paul-taylor2/comp1602-pastpaper-practice.git
   <code>There are several ways to save this repository on your device. Two of these options include:</code>
 </summary>
 
-- [Downloading repository as ZIP](https://github.com/carrot2803/Comp1602-Finals-Solutions/archive/refs/heads/master.zip)
+- [Downloading repository as ZIP](https://github.com/carrot2803/02-Finals-Solutions/archive/refs/heads/master.zip)
 - Running the following command in a terminal, provided the [GitHub CLI](https://cli.github.com/) has been previously installed:
 ```sh
-git clone https://github.com/carrot2803/Comp1602-Finals-Solutions.git
+git clone https://github.com/carrot2803/02-Finals-Solutions.git
 ```
 </details>
 
