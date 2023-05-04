@@ -16,15 +16,11 @@ Cell createCell(int red, int green, int blue, char symbol){
 void initFlag(Cell flag[][cols], int rows, int cols){
     for(int i = 0; i < rows; i++)
         for(int j = 0; j < cols; j++)
-            if(i == j)
+            if(i == j || i + 4 == j)
                 flag[i][j] = createCell(0, 0, 0, '-');
-            else if(i > j)
+            else if(i > j || i + 4 < j)
                 flag[i][j] = createCell(255, 255, 0, '*');
-            else if(i + 4 == j)
-                flag[i][j] = createCell(0, 0, 0, '-');
-            else if(i + 4 < j)
-                flag[i][j] = createCell(255, 255, 0, '*');
-            else if(i + 4 > j)
+            else
                 flag[i][j] = createCell(255, 255, 255, '#');
 }
 
