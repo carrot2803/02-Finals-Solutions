@@ -5,10 +5,8 @@ i. No the array is not sorted
 ii.
 lo  hi  mid  value
 0   8   4    Monser
-0   3   2    Vene
-0   1   1    Bar
-1   1   1    Bar
-2   1   -    -
+0   3   1    Bar
+2   1   -    -    Search Terminated as lo > hi
 
 b. 
 If the array contains duplicate values, the binary search algorithm would still work
