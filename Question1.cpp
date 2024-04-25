@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// redefine strlen :)
 int strlen(const char ch[]){
     int i = 0;
     while(ch[i] != '\0')
